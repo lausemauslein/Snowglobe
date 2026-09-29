@@ -42,7 +42,7 @@ main {
 }
 
 #message {
-  font-style: bold;
+  font-weight: bold;
   font-size: 20px;
   color:#759eb8 ;
 }
@@ -91,7 +91,6 @@ button:hover {
 
 .grid{
   width: 100%;
-  gap: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -101,10 +100,28 @@ button:hover {
 
 .flakies{
   width: 380px;
+  margin: -250px 0 0 0;
+  padding: 0 0 0 0;
+  transition: transform 2s linear;
+}
+
+.flakies.shaking{
+  animation: flakies 1200ms ease
 }
 
 .its_me{
-  text-align: bottom;
   color: #162d4f;
   padding: 0 0 0 15px;
+}
+
+.grid:has(button:hover) .flakies{
+  transform: translate(0, 300px)
+}
+
+@keyframes flakies {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-40px); }
+  50% { transform: translateX(40px); }
+  75% { transform: translateX(-20px); }
+  100% { transform: translateX(0); }
 }
