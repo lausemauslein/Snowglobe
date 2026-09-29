@@ -88,3 +88,23 @@ button:hover {
 .globe.shaking {
   animation: shake 600ms ease;
 }
+
+.grid{
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.flakies{
+  width: 380px;
+}
+
+.its_me{
+  text-align: bottom;
+  color: #162d4f;
+  padding: 0 0 0 15px;
+}
