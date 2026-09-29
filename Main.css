@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  color: #162d4f;
+  background: linear-gradient(#759eb8, #cdedfd);
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+h1 {
+  color: #c3aed6;
+  text-shadow: 2px 2.5px 0 #e6e6fa;
+  font-size: 50px;
+}
+
+.kindness{
+  color: #fff5ee;
+  font-size: 18px;
+}
+
+.tagline {
+  color: #c3aed6;
+}
+
+.hero {
+  padding: 3rem 1rem 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+.globe-card {
+  background: #fff5ee;
+  border: 3px solid #759eb8;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+#message {
+  font-style: bold;
+  font-size: 20px;
+  color:#759eb8 ;
+}
+
+.globe {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scene {
+  width: 78%;
+}
+
+button {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  color: #fff5ee;
+  background: #c3aed6;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+button:hover {
+  background: #759eb8;
+  transform: scale(1.05);
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  20% { transform: translateX(-0.6rem) rotate(-4deg); }
+  40% { transform: translateX(0.6rem) rotate(4deg); }
+  60% { transform: translateX(-0.4rem) rotate(-2deg); }
+  80% { transform: translateX(0.4rem) rotate(2deg); }
+}
+
+.globe.shaking {
+  animation: shake 600ms ease;
+}
