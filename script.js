@@ -10,7 +10,7 @@ const messages = [
   "YOU are allowed to be a beginner for as long as YOU need.",
   "Hot chocolate tastes better after a hard day. YOU've earned one.",
   "YOU ask good questions. That is the whole skill.",
-  "YOU are the person YOU are because of the person YOU used to be."
+  "YOU are the person YOU are because of the person YOU used to be.",
 ];
 
 button.addEventListener("click", () => {
@@ -18,9 +18,10 @@ button.addEventListener("click", () => {
   globe.classList.add("shaking");
   setTimeout(() => globe.classList.remove("shaking"), 600);
 
-  flakiesList.forEach((flakie) => {
-    flakie.classList.add("shaking");
-    setTimeout(() => flakie.classList.remove("shaking"), 1200);
+  flakiesList.forEach((flakies) => {
+    flakies.classList.add("shaking");
+    setTimeout(() => flakies.classList.remove("shaking"), 1200);
+
   });
 
   const pick = Math.floor(Math.random() * messages.length);
