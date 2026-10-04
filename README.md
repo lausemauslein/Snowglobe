@@ -1,3 +1,1 @@
-# This-is-Me
-In this code, I will work on a website that will include information about who I am. I want this to be linked to my practice YouTube page I made following a video tutorial. This page should be there for me to show others and be like These are things I like. 
-AI might be used to learn. The built-in system in VS Code will help me understand new topics, such as cubic Bézier. Additionally, it might be used to help solve a mistake or spelling issue if I cannot figure it out on my own. This will help me learn how to solve some of my typical mistakes and will help me learn to be extra careful about my spelling.
+#Snowglobe
