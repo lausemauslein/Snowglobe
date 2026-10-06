@@ -28,7 +28,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  width: 410px;
+  width: 90%;
 }
 
 #message {
